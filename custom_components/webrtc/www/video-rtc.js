@@ -260,7 +260,7 @@ export class VideoRTC extends HTMLElement {
         if ('hidden' in document && this.visibilityCheck) {
             document.addEventListener('visibilitychange', () => {
                 if (document.hidden) {
-                    this.disconnectedCallback();
+                    //this.disconnectedCallback();
                 } else if (this.isConnected) {
                     this.connectedCallback();
                 }
